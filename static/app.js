@@ -8,6 +8,7 @@ let i = 0;
 let differentTexts = [
   "Sometimes you need to try hard to reach your goal. <br> Finding solution can be hard sometimes.</br> He tells you that you have enter 6b 65 79. huh.",
   "Looks you found your first text, here is next one. Don't use inspect element.",
+  "Попробуйте найти это слово 'счастливый'",
   "congrats, you just found every word",
 ];
 
@@ -17,7 +18,7 @@ function main() {
   userInput();
 }
 
-// Get the text and put the first sentence
+// Get the text and put the first sentence (i)
 function playGame() {
   document.getElementById("changeText").innerHTML += differentTexts[i];
 }
@@ -30,7 +31,7 @@ function clearText() {
 
 // Clear input text in every corrected answer
 function clearInput() {
-  document.getElementById("user-input").value = "";
+  inputkey = document.getElementById("user-input").value = "";
 }
 
 let validation = 0;
@@ -53,6 +54,16 @@ function userInput() {
         clearText();
         clearInput();
         i += 1;
+        validation += 1;
+        playGame();
+      }
+      break;
+    case "happy":
+      if (validation == 2) {
+        clearText();
+        clearInput();
+        i += 1;
+        validation += 1;
         playGame();
       }
       break;
