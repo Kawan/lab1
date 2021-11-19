@@ -13,6 +13,11 @@ body {
   background: rgb(2, 15, 39);
 }
 
+h1 {
+  color: white;
+  margin-bottom: 20px;
+}
+
 .wrapper {
   justify-content: center;
   height: 60vh;
@@ -44,4 +49,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#user-input {
+  border-radius: 30px;
+  padding: 10px;
+  width: 20rem;
+  background-color: rgb(240, 240, 240);
+}
+#user-input:hover {
+  background-color: white;
+}
+#user-input:focus {
+  background-color: white;
 }
