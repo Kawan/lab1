@@ -4,14 +4,6 @@ window.onload = main;
 // Where it picks up first sentence
 let i = 0;
 
-// Different texts where we can use it later
-let differentTexts = [
-  "Sometimes you need to try hard to reach your goal. <br> Finding solution can be hard sometimes.</br> He tells you that you have enter 6b 65 79. huh.",
-  "Looks you found your first text, here is next one. Don't use inspect element.",
-  "Попробуйте найти это слово 'счастливый'",
-  "congrats, you just found every word",
-];
-
 // Call the function to load
 function main() {
   playGame();
