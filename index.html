@@ -16,10 +16,12 @@
       </div>
       <div class="input-container">
         <input
+          oninput="userInput()"
           id="user-input"
           type="text"
           placeholder="Enter your input here..."
         />
+        <button onclick="clearText()">ok</button>
       </div>
     </div>
     <script src="app.js"></script>
